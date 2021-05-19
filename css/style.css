@@ -100,9 +100,10 @@
   overflow: hidden;
 }
 #loader {
-  background: url(../images/1.gif);
+  background: url(../images/2.gif);
+  
   width: 64px;
-  height: 40px;
+  height: 64px;
   position: relative;
   top: 50%;
   margin: -20px auto 0 auto;
