@@ -578,70 +578,16 @@ body .theme-button-one:hover {background:#000f32; }
   margin: 2px;
   
 }
-/*------------------ Feature Banner ---------------*/
-.feature-banner {
-  background: url(../images/home/2.jpg) no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #707d9e;
-  text-align: center;
+.remontas {
+  display: inline-block;
+  width: 100px;
+  /* height: 100px; */
+  padding: 10px;
+  
 }
-.feature-banner .opacity {
-  background: rgba(0,26,87,0.5);
-  padding: 74px 0 80px 0;
-}
-.feature-banner .opacity h2 {
-  font-size: 42px;
-  line-height: 52px;
-  text-transform: inherit;
-  color: #fff;
-  padding: 0 100px;
-  margin-bottom: 32px;
-}
-/*---------------- Service Style One --------------*/
-.service-style-one .single-service {
-  position: relative;
-  padding-left: 118px;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-.service-style-one .single-service .text {
-  border: 1px solid #eaeaea;
-  border-radius: 0 4px 4px 0;
-  border-left:none;
-  padding: 20px 10px 18px 30px;
-}
-.service-style-one .single-service .text p {padding-bottom: 10px;}
-.service-style-one .single-service .text .read-more {
-  font-size: 14px;
-  font-weight: 700;
-}
-.service-style-one .single-service .text .read-more i {margin-left: 2px;}
-.service-style-one .single-service .img-box {
-  position: absolute;
-  left:0;
-  top:0;
-  bottom: 0;
-  width: 120px;
-  border-radius: 5px;
-  background: #7E0925;
-}
-.service-style-one .single-service .img-box img {width: 100%;border-radius: 4px;opacity: 0.9;}
-.service-style-one .single-service:hover .text {border-color: #fff;}
-.service-style-one .single-service:hover {
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
-}
-.service-style-one .wrapper {margin-top: 50px;}
-.service-style-one .contact-text {text-align: center;padding-top:35px;}
-.service-style-one .contact-text h4 {font-weight: normal;margin-bottom: 10px;}
-.service-style-one .contact-text h5 {font-weight: normal;display: inline-block;position: relative;}
-.service-style-one .contact-text h5:before {
-  content: '';
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  bottom: 1px;
-  left:0;
+
+.logo.car {
+  vertical-align: bottom;
 }
 
 /*---------------------- Theme footer one ------------------*/
