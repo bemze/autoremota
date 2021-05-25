@@ -110,6 +110,7 @@
   .theme-footer-one .bottom-footer ul li a {margin-left: 20px;}
   .blog-details .single-blog .post-meta .mark-text .inner-text {padding-top: 80px;}
   .blog-details .single-blog .post-meta .mark-text .inner-text:before {top:10px;}
+  
   #theme-main-banner {height: 600px !important;}
 }
 /*(min-width: 768px) and (max-width: 991px)*/
@@ -139,6 +140,7 @@
   .google-map-two {height: 300px;}
   #theme-main-banner .camera_caption h1 br {display: none;}
   .error-page input {width: 100%;margin-top: 20px;}
+ 
 }
 /*(max-width: 767px)*/
 
@@ -159,8 +161,10 @@
   .theme-menu-wrapper .right-widget .cart-icon {width: 42px;margin-left: 10px;}
   .theme-title-one h2 {font-size: 30px;padding-bottom: 18px;}
   .section-spacing {margin-bottom: 60px;}
-  .about-compnay .mission-goal li h4 {font-size: 18px;}
-  .about-compnay .mission-goal li .icon {font-size: 35px;}
+  .about-compnay .mission-goal div h4 {font-size: 15px;}
+  .about-compnay .mission-goal div {height: 110px;}
+  .theme-title-one.return-back {visibility:visible;}
+  .about-compnay .mission-goal div .icon {font-size: 35px;}
   .feature-banner .opacity h2 {font-size: 35px;line-height: 45px;}
   .feature-banner .opacity,.testimonial-section .overlay,.theme-counter .bg {padding: 60px 0;}
   .service-style-one .contact-text h5:before {display: none;}

@@ -207,6 +207,7 @@
 .camera_caption h1 {
   color:#fff;
   background-color: rgba(212, 208, 208, 0.2);
+  text-align: center;
 }
 .p-bg-color,.scroll-top,.header-one .top-header .address-wrapper .quotes a:hover,.theme-menu-wrapper .right-widget .search-option form button,
 #mega-menu-holder ul.dropdown li:hover>a:before,.theme-button-one,#theme-main-banner .camera_caption .theme-button-one:hover,.callout-banner.no-bg .theme-button-one,
@@ -231,7 +232,7 @@ body .theme-button-one {
   border-radius: 5px;
   padding: 0 35px;
 }
-body .theme-button-one:hover {background:#000f32; }
+body .theme-button-one:hover {background:#ad0c32; }
 /*------------------- Theme Title ------------------*/
 .theme-title-one {position: relative;text-align: center; padding-top: 50px;}
 .theme-title-one h2 {
@@ -558,31 +559,49 @@ body .theme-button-one:hover {background:#000f32; }
 .top-feature.fix-border .main-content:hover {border-top-color: #7E0925;}
 /*------------------ About Company -----------------*/
 .about-compnay img {border-radius: 5px;}
-.about-compnay .mission-goal {
-  /* border-top:1px solid #dcdcdc; */
-  /* padding-top: 15px; */
-  /* margin-top: 10px; */
-}
-.about-compnay .mission-goal li {
- display: block;
+
+.about-compnay .mission-goal div {
+display: inline-flex;
   float: left;
   width: 32%;
   height: 175px;
   text-align: center;
-  position: relative;
+  
+  
+  
+  
 }
-.about-compnay .mission-goal li .icon {font-size: 55px;}
-.about-compnay .mission-goal li {
+.about-compnay .mission-goal div .icon {font-size: 55px;}
+.about-compnay .mission-goal div {
   border: 1px solid #7E0925;
   border-radius: 5%;
   margin: 2px;
+
+
   
 }
-.remontas {
+.mission-goal .remontas {
   display: inline-block;
-  width: 100px;
-  /* height: 100px; */
-  padding: 10px;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 45%;
+}
+.mission-goal .remontas1 {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 60%;
+}
+.mission-goal .remontas2 {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 35%;
+}
+.remonto-linkas {
+align-items: flex-end;
+/* background-color: greenyellow; */
+text-align: center;
   
 }
 
@@ -782,38 +801,6 @@ body .theme-button-one:hover {background:#000f32; }
 }
 .theme-footer-two .bottom-footer p {font-size: 17px;color: #9ca6bf;}
 
-/*------------------- About Company Stye Two -------------------*/
-.about-compnay-two {
-  background: url(../images/home/11.jpg) no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #707d9e;
-}
-.about-compnay-two .overlay {background: rgba(0,26,87,0.8);padding: 100px 0;}
-.about-compnay-two .theme-title-one {text-align: left;margin-bottom: 30px;}
-.about-compnay-two .theme-title-one h2 {color: #fff;}
-.about-compnay-two .theme-title-one h2:before {left:0;margin: 0;color: #919fbf;}
-.about-compnay-two .text p {
-  color: #cad2e5;
-  padding: 0 50px 15px 0;
-}
-.about-compnay-two .text .sign {margin-top: 15px;}
-.about-compnay-two .quote-form {
-  background: #fff;
-  border-radius: 5px;
-  padding: 25px 25px 40px 40px;
-}
-.about-compnay-two .theme-form-one textarea {
-  height: 80px;
-  max-height: 80px;
-  margin-bottom: 22px;
-}
-.about-compnay-two .left-img {border-radius: 5px;}
-.about-compnay-two.no-bg {background: none;}
-.about-compnay-two.no-bg .overlay {background: #fff;padding: 0;}
-.about-compnay-two.no-bg .theme-title-one h2 {color: #232323;}
-.about-compnay-two.no-bg .theme-title-one h2:before {background: #c3c3c3;}
-.about-compnay-two.no-bg .text p {color: #555555;padding-right: 0;}
 
 /*------------------ Short Banner ------------------*/
 .short-banner {
@@ -932,64 +919,19 @@ body .theme-button-one:hover {background:#000f32; }
   margin-top: 50px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
 }
-.contact-us-section .img-box {
-  background: url(../images/home/22.jpg) no-repeat center;
-  background-size: cover;
-  height: 500px;
-  border-radius: 5px 0 0 5px;
-}
-.contact-us-section .form-wrapper {
-  background: #fff;
-  border-radius: 0 5px 5px 0;
-  height: 500px;
-  padding: 75px 40px 60px 40px;
-}
+
 .theme-form-one input:focus,
 .theme-form-one textarea:focus {border-bottom-color: #001a57;}
-/*======================= Form Validation ===================*/
-.alert-wrapper {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height:100%;
-  background: rgba(0,0,0,0.6);
-  top: 0;
-  left: 0;
-  z-index: 9999999;
-}
-#success,#error {
-  position: relative;
-  width:500px;
-  height: 100px;
-  top: calc(50% - 50px);
-  left:calc(50% - 250px);
-  background: rgba(0,0,0,0.8);
-  text-align: center;
-}
-#success .wrapper,#error .wrapper {
-  display: table;
-  width:100%;
-  height: 100%;
-}
-#success .wrapper p,#error .wrapper p{
-  display: table-cell;
-  vertical-align: middle;
-  letter-spacing: 1px;
-}
-#success p {color: #26ace3;}
-#error p {color: #C9182B;}
-#error button,
-#success button {
-  color:#fff;
-  width:40px;
-  height:40px;
-  line-height: 20px;
-  background: transparent;
-  border-radius: 50%;
+/*---------------- Paslaugos ----------------*/
+
+.paslaugos {
+  width: 10%;
   position: absolute;
-  top: -20px;
-  right: -20px;
-  font-size: 20px;
+  top: 50%;
+  left: 1%;
+  /* transform: translate(-50%, -50%);   */
 }
-.form-validation label.error {display: none !important;}
-.form-validation input.error,.form-validation textarea.error {border-bottom:1px solid #f03838 !important;}
+.theme-title-one.return-back {
+  visibility: hidden;
+
+}
