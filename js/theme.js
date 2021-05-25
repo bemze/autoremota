@@ -14,13 +14,13 @@
     $(document).on ('ready', function (){
         
         // -------------------- Navigation Scroll
-        $(window).on('scroll', function (){   
-          var sticky = $('.theme-menu-wrapper'),
-          scroll = $(window).scrollTop();
-          if (scroll >= 190) sticky.addClass('fixed');
-          else sticky.removeClass('fixed');
+        // $(window).on('scroll', function (){   
+        //   var sticky = $('.theme-menu-wrapper'),
+        //   scroll = $(window).scrollTop();
+        //   if (scroll >= 190) sticky.addClass('fixed');
+        //   else sticky.removeClass('fixed');
 
-        });
+        // });
 
         // ------------------------------ Theme Menu 
         var menu= $("#mega-menu-holder");
@@ -94,14 +94,6 @@
 
 
 
-        // ----------------------------- Counter Function
-        var timer = $('.timer');
-        if(timer.length) {
-            timer.appear(function () {
-              timer.countTo();
-          })
-        }
-
         // ------------------------------------- Fancybox
         var fancy = $ (".fancybox");
         if(fancy.length) {
@@ -113,33 +105,7 @@
         }
 
 
-         // ------------------------------ Language Switcher
-         var plang = $('#polyglotLanguageSwitcher');
-         if (plang.length) {
-              plang.polyglotLanguageSwitcher({
-                effect: 'fade',
-                        testMode: true,
-                        onChange: function(evt){
-                            alert("The selected language is: "+evt.selectedItem);
-                        }
-                      //      ,afterLoad: function(evt){
-                      //          alert("The selected language has been loaded");
-                      //      },
-                      //      beforeOpen: function(evt){
-                      //          alert("before open");
-                      //      },
-                      //      afterOpen: function(evt){
-                      //          alert("after open");
-                      //      },
-                      //      beforeClose: function(evt){
-                      //          alert("before close");
-                      //      },
-                      //      afterClose: function(evt){
-                      //          alert("after close");
-                      //      }
-              });
-          };
-
+         
 
         // ------------------------------- Feature Slider
         var tSlider = $ (".top-features-slide");
@@ -171,244 +137,6 @@
           })
         }
 
-
-        // ------------------------------- Testimonial Slider 
-        var mSlider = $ (".testimonial-slider");
-        if(mSlider.length) {
-            mSlider.owlCarousel({
-              loop:true,
-              nav:false,
-              dots:true,
-              autoplay:true,
-              autoplayTimeout:4000,
-              smartSpeed:1000,
-              autoplayHoverPause:true,
-              lazyLoad:true,
-              items:1
-          })
-        }
-
-
-        // ------------------------------- Partner Slider
-        var pSlider = $ (".partner-slider");
-        if(pSlider.length) {
-            pSlider.owlCarousel({
-              loop:true,
-              nav:false,
-              dots:false,
-              autoplay:true,
-              autoplayTimeout:4000,
-              smartSpeed:1200,
-              autoplayHoverPause:true,
-              lazyLoad:true,
-              responsive:{
-                    0:{
-                        items:2
-                    },
-                    768:{
-                        items:3
-                    },
-                    992:{
-                        items:4
-                    },
-                    1200:{
-                        items:5
-                    }
-                },
-          })
-        }
-
-        // -------------------------------  Latest News Slider
-        var rpSlider = $ (".latest-news-slider");
-        if(rpSlider.length) {
-            rpSlider.owlCarousel({
-              loop:true,
-              nav: false,
-              dots:false,
-              autoplay:true,
-              margin:30,
-              autoplayTimeout:3500,
-              smartSpeed:1200,
-              autoplayHoverPause:true,
-              lazyLoad:true,
-              responsive:{
-                    0:{
-                        items:1
-                    },
-                    576:{
-                        items:2
-                    },
-                    992:{
-                        items:3
-                    }
-                },
-          })
-        }
-
-
-        // -------------------------------  Core Value Slider
-        var rpSlider = $ (".core-value-slider");
-        if(rpSlider.length) {
-            rpSlider.owlCarousel({
-              loop:true,
-              nav: false,
-              dots:false,
-              autoplay:true,
-              margin:30,
-              autoplayTimeout:3500,
-              smartSpeed:1200,
-              autoplayHoverPause:true,
-              lazyLoad:true,
-              responsive:{
-                    0:{
-                        items:1
-                    },
-                    576:{
-                        items:2
-                    },
-                    992:{
-                        items:3
-                    }
-                },
-          })
-        }
-
-
-        // -------------------------------  Related Post Slider
-        var rpSlider = $ (".related-post-slider");
-        if(rpSlider.length) {
-            rpSlider.owlCarousel({
-              loop:true,
-              nav: false,
-              dots:false,
-              autoplay:true,
-              autoplayTimeout:4000,
-              smartSpeed:1200,
-              lazyLoad:true,
-              responsive:{
-                    0:{
-                        items:1
-                    },
-                    576:{
-                        items:2
-                    }
-                },
-          })
-        }
-
-
-        // -------------------------------  Related Product Slider
-        var rpSlider = $ (".related-product-slider");
-        if(rpSlider.length) {
-            rpSlider.owlCarousel({
-              loop:true,
-              nav: false,
-              dots:false,
-              autoplay:true,
-              margin:30,
-              autoplayTimeout:4000,
-              smartSpeed:1200,
-              lazyLoad:true,
-              responsive:{
-                    0:{
-                        items:2
-                    },
-                    768:{
-                        items:3
-                    },
-                    992:{
-                        items:4
-                    }
-                },
-          })
-        }
-
-
-
-
-        // -------------------------------  Compnay Branch Address
-        var baSlider = $ (".address-slider");
-        if(baSlider.length) {
-            baSlider.owlCarousel({
-              loop:true,
-              nav: false,
-              dots:false,
-              autoplay:true,
-              autoplayTimeout:2000,
-              smartSpeed:1200,
-              lazyLoad:true,
-              autoplayHoverPause:true,
-              responsive:{
-                    0:{
-                        items:1
-                    },
-                    500:{
-                        items:2
-                    },
-                    768:{
-                        items:3
-                    },
-                    992:{
-                        items:4
-                    }
-                },
-          })
-        }
-
-
-        // --------------------------------- Contact Form Validation
-          if($('.form-validation').length){
-            $('.form-validation').validate({ // initialize the plugin
-              rules: {
-                name: {
-                  required: true
-                },
-                email: {
-                  required: true,
-                  email: true
-                },
-                web: {
-                  required: true
-                },
-                phone: {
-                  required: true
-                },
-                message: {
-                  required: true
-                }
-              },
-            submitHandler: function(form) {
-              $(form).ajaxSubmit({
-                success: function() {
-                  $('.form-validation :input').attr('disabled', 'disabled');
-                  $('.form-validation').fadeTo( "slow", 1, function() {
-                      $(this).find(':input').attr('disabled', 'disabled');
-                      $(this).find('label').css('cursor','default');
-                      $('#alert-success').fadeIn();
-                    });
-                  },
-                  error: function() {
-                    $('.form-validation').fadeTo( "slow", 1, function() {
-                      $('#alert-error').fadeIn();
-                    });
-                  }
-                });
-              }
-            });
-          }
-
-
-
-          // ---------------------------------- Validation Alert
-          var closeButton = $ (".closeAlert");
-            if(closeButton.length) {
-                closeButton.on('click', function(){
-                  $(".alert-wrapper").fadeOut();
-                });
-                closeButton.on('click', function(){
-                  $(".alert-wrapper").fadeOut();
-                })
-            }
 
 
           // -------------------------------- Accordion Panel
